@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siji-san Studio — Coming Soon</title>
+  <meta name="description" content="Siji-san Studio — Coming Soon" />
+
+  <style>
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #ffffff; /* fallback */
+    }
+
+    /* Full-bleed image, always visible, no scroll */
+    .frame {
+      height: 100svh; /* better on mobile browser UI */
+      width: 100vw;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* fills screen, crops if needed */
+      object-position: center;
+      display: block;
+    }
+
+    /* Accessibility: keep text for screen readers */
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="frame">
+    <h1 class="sr-only">Siji-san Studio — Coming Soon</h1>
+    <img src="sijisan_coming_soon.png" alt="Siji-san Studio coming soon page illustration." />
+  </main>
+</body>
+</html>
