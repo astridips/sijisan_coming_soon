@@ -5,47 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Siji-san Studio — Coming Soon</title>
   <meta name="description" content="Siji-san Studio — Coming Soon" />
-
-  <style>
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      background: #ffffff; /* fallback */
-    }
-
-    /* Full-bleed image, always visible, no scroll */
-    .frame {
-      height: 100svh; /* better on mobile browser UI */
-      width: 100vw;
-      overflow: hidden;
-      display: grid;
-      place-items: center;
-      background: #ffffff;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* fills screen, crops if needed */
-      object-position: center;
-      display: block;
-    }
-
-    /* Accessibility: keep text for screen readers */
-    .sr-only {
-      position: absolute;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0);
-      white-space: nowrap; border: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <main class="frame">
-    <h1 class="sr-only">Siji-san Studio — Coming Soon</h1>
-    <img src="sijisan_coming_soon.png" alt="Siji-san Studio coming soon page illustration." />
+  <main class="stage" role="main" aria-label="Siji-san Studio coming soon">
+    <!-- Background layer -->
+    <div class="bg" aria-hidden="true"></div>
+
+    <!-- Text overlay -->
+    <div class="overlay">
+      <header class="brand">
+        <div class="mark">Siji-san Studio</div>
+      </header>
+
+      <section class="note note-left">
+        <p class="scribble">Hello, folks! Welcome to<br />my house in the clouds.</p>
+      </section>
+      
+
+      <section class="note note-right">
+        <p class="scribble">I’m still working on the bricks and mortar,</p>
+      </section>
+      
+    
+
+      <footer class="contact">
+        <p class="door">but the door is open:</p>
+        <a class="email" href="mailto:hello@sijisan.com">hello@sijisan.com</a>
+      </footer>
+    </div>
   </main>
 </body>
 </html>
